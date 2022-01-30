@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <style>
+        body{display: flex;justify-content: center;align-items: center}
+        main .board{width: 320px}
+        main .board div{display: flex;justify-content: center;align-items: center;width: 80px;height: 80px;border: solid 1px black;float: left}
+        main .board div img{ width: 50px; height: 50px;}
+        main h1 img{ width: 40px; height: 50px;}
+    </style>
+</head>
+<body>
+    
+    <main>
+
+        <h1>vez do jogador: <img src="" id="indicator" > </h1>
+        <button onclick="reset()" >resetar</button>
+
+        <section class="board">
+            <div id="a1" class="space" jogada=""></div>
+            <div id="a2" class="space" jogada=""></div>
+            <div id="a3" class="space" jogada=""></div>
+
+            <div id="b1" class="space" jogada=""></div>
+            <div id="b2" class="space" jogada=""></div>
+            <div id="b3" class="space" jogada=""></div>
+
+            <div id="c1" class="space" jogada=""></div>
+            <div id="c2" class="space" jogada=""></div>
+            <div id="c3" class="space" jogada=""></div>
+        </section>
+        
+
+    </main>
+
+
+    <script src='app.js'></script>
+</body>
+</html>
